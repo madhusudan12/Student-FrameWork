@@ -1,0 +1,4 @@
+Requirements: 1.SQLite3
+              2.Flask (package in python)
+              3.Python >3.5.2 
+              4.PyCharm(IDE)
