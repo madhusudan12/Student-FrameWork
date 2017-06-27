@@ -1,2 +1,2 @@
 # Student-FrameWork
-Stores Student Information likes marks and displays
+Stores Student Information like marks and displays the needed information.
