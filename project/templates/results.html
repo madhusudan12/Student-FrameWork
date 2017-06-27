@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>results</title>
+
+</head>
+<body bgcolor="white">
+<table align="center" border="7" width="80%" >
+        <td bgcolor="#175963"></td>
+
+    </table>
+<br><br><br>
+<center>
+    <table align="center" border="0" width="60%">
+        <tr bgcolor="#b5dcb3">
+            <td>
+                 NAME   :
+            </td>
+            <td>{{n}}</td>
+        </tr>
+        <tr bgcolor="#b5dcb3">
+            <td>ROLL NO :</td>
+            <td>{{i}}</td>
+        </tr>
+        <tr bgcolor="#b5dcb3">
+            <td>SEMESTER :</td>
+            <td>{{s}}</td>
+        </tr>
+    </table>
+
+    <br><br>
+<table align="center" border="0" width="60%">
+    <th bgcolor="#b5dcb3">SUBJECTS</th>
+    <th bgcolor="#b5dcb3">GRADE</th>
+    <th bgcolor="#b5dcb3">GRADEPEOINT</th>
+    {% for rno,sub,m,grade,gradepoint,sem in r %}
+    <tr bgcolor="#eee" align="center">
+        <td align="left">
+            {{sub}}
+        </td>
+        <td >
+            {{grade}}
+        </td>
+        <td>
+            {{gradepoint}}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+    <br>
+    <table align="center" border="0" width="60%" >
+        <tr>
+            <td bgcolor="#eee" >SGPA  : </td>
+            <td bgcolor="#eee" >{{sg}}</td>
+    <tr>
+        <td bgcolor="#eee" >CGPA  :</td>
+        <td bgcolor="#eee" >{{cg}}</td>
+    </tr>
+    </table>
+
+</center>
+<br>
+<br><br><br><br><br>
+<a href="/home">Go to homepage</a>
+</body>
+</html>

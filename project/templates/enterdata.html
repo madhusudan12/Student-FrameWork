@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>enterdata</title>
+</head>
+<body bgcolor="white">
+<br><br><br>
+<center>
+    <table align="center" border="0" width="45%">
+        <tr bgcolor="#eee">
+            <td>ROLL NO : </td>
+            <td>{{r}}</td>
+        </tr>
+        <tr bgcolor="#eee">
+            <td>SEMESTER :</td>
+            <td>{{s}}</td>
+        </tr>
+    </table>
+
+    <br><br>
+<form action="http://127.0.0.1:5000/dataset" method="post">
+    <input type="hidden" name="s" value="{{s}}">
+    <input type="hidden" name="r" value="{{r}}">
+<table align="center" border="0" width="45%">
+    <th bgcolor="#b5dcb3">subjects</th>
+    <th bgcolor="#b5dcb3">marks</th>
+
+    <tr bgcolor="#eee" align="left">
+        <td>
+        {{sub[0]}}
+        </td>
+        <td>
+        <input type="text" align="center" name="m0">
+        </td>
+
+    </tr>
+    <tr bgcolor="#eee" align="left">
+        <td>
+        {{sub[1]}}
+        </td>
+        <td>
+        <input type="text" align="center" name="m1">
+        </td>
+
+    </tr>
+    <tr bgcolor="#eee" align="left">
+        <td>
+        {{sub[2]}}
+        </td>
+        <td>
+        <input type="text" align="center" name="m2">
+        </td>
+
+    </tr>
+    <tr bgcolor="#eee" align="left">
+        <td>
+        {{sub[3]}}
+        </td>
+        <td>
+        <input type="text" align="center" name="m3">
+        </td>
+
+    </tr>
+    <tr bgcolor="#eee" align="left">
+        <td>
+        {{sub[4]}}
+        </td>
+        <td>
+        <input type="text" align="center" name="m4">
+        </td>
+
+    </tr>
+    <tr bgcolor="#eee" align="left">
+        <td>
+        {{sub[5]}}
+        </td>
+        <td>
+        <input type="text" align="center"  name="m5">
+        </td>
+
+    </tr>
+
+</table>
+    <br><br>
+    <input type="submit" name="submit" style="color:white;background-color:#175963;height:30px;width:90px">
+
+</form>
+</center>
+<br><br><br><br><br><br><br>
+<a href="/home">Go to homepage</a>
+</body>
+</html>
